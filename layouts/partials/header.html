@@ -1,9 +1,9 @@
 <header class="site-header">
-  <img class="avatar" src="{{ .Site.Params.avatar }}" alt="Avatar">
+  <a href="{{ .Site.BaseURL }}" style="opacity: 1;"><img class="avatar" src="{{ .Site.Params.avatar }}" alt="Avatar"></a>
   {{  if eq .Kind "home" }}
-  <h1 class="title">{{ .Site.Title }}</h1>
+  <a href="{{ .Site.BaseURL }}" style="opacity: 1;"><h1 class="title">{{ .Site.Title }}</h1></a>
   {{ else }}
-  <h2 class="title">{{ .Site.Title }}</h2>
+  <a href="{{ .Site.BaseURL }}" style="opacity: 1;"><h2 class="title">{{ .Site.Title }}</h2></a>
   {{ end }}
   <p class="subtitle">{{ .Site.Params.subtitle }}</p>
   <button class="menu-toggle" type="button">
